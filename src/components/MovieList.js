@@ -8,7 +8,6 @@ const MovieList = ({ movies }) => {
 
     return (
         <div>
-            <h2>Movie List</h2>
             <ul className="list-group">
                 {movies.map(movie => (
                     <li key={movie.id} className="list-group-item">
