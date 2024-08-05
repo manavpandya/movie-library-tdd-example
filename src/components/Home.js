@@ -1,9 +1,8 @@
+// src/pages/Home.js
 import React from 'react';
 
-const Home = () => (
-    <div>
-        <h1>Home Page</h1>
-    </div>
-);
+const Home = () => {
+    return <h1>Welcome to the Movie Library</h1>;
+};
 
 export default Home;

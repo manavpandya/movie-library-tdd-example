@@ -24,12 +24,12 @@ const Movies = () => {
     };
 
     return (
-        <>
+        <div className="container">
             <Routes>
                 <Route path="/" element={<MovieList movies={movies} />} />
                 <Route path=":id" element={<MovieDetailsWrapper />} />
             </Routes>
-        </>
+        </div>
     );
 };
 

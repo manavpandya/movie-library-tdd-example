@@ -1,3 +1,4 @@
+// src/components/MovieList.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,9 +10,9 @@ const MovieList = ({ movies }) => {
     return (
         <div>
             <h2>Movie List</h2>
-            <ul>
+            <ul className="list-group">
                 {movies.map(movie => (
-                    <li key={movie.id}>
+                    <li key={movie.id} className="list-group-item">
                         <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
                     </li>
                 ))}

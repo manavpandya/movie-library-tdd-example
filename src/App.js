@@ -1,21 +1,33 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SideNav from './components/SideNav';
+import { Routes, Route, Link } from 'react-router-dom';
+import Movies from './pages/Movies';
 import Home from './components/Home';
-import MovieList from './pages/Movies';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <div className="App">
-        <SideNav />
+    <div className="d-flex">
+      <nav className="bg-light sidebar">
+        <div className="sidebar-sticky">
+          <ul className="nav flex-column">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/movies">Movies</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/movies/*" element={<MovieList />} />
+          <Route path="/movies/*" element={<Movies />} />
         </Routes>
       </div>
-    </Router>
+    </div>
   );
-}
+};
 
 export default App;
