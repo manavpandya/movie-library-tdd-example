@@ -11,7 +11,7 @@ function App() {
         <SideNav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/movies" element={<MovieList />} />
+          <Route path="/movies/*" element={<MovieList />} />
         </Routes>
       </div>
     </Router>
