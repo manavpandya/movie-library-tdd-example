@@ -1,0 +1,24 @@
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.text-section {
+    flex: 1;
+    max-width: 45%;
+    padding: 10px;
+}
+
+.image-section {
+    flex: 1;
+    max-width: 45%;
+    padding: 10px;
+}
+
+.about-us-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

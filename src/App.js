@@ -1,8 +1,8 @@
-// src/App.js
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Movies from './pages/Movies';
 import Home from './components/Home';
+import AboutUs from './components/AboutUs';
 import './App.css';
 
 const App = () => {
@@ -17,6 +17,9 @@ const App = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/movies">Movies</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About Us</Link>
+            </li>
           </ul>
         </div>
       </nav>
@@ -24,6 +27,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies/*" element={<Movies />} />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
       </div>
     </div>
