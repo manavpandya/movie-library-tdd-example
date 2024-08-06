@@ -10,9 +10,9 @@ const Movies = () => {
 
     useEffect(() => {
         const fetchMovies = () => [
-            { id: 1, title: 'Inception', description: 'A mind-bending thriller', director: 'Christopher Nolan' },
-            { id: 2, title: 'Interstellar', description: 'A journey through space and time', director: 'Christopher Nolan' },
-            { id: 3, title: 'Dunkirk', description: 'A WWII epic', director: 'Christopher Nolan' },
+            { id: 1, title: 'Inception', description: 'A mind-bending thriller', director: 'Christopher Nolan', trailer: 'https://www.youtube.com/embed/YoHD9XEInc0' },
+            { id: 2, title: 'Interstellar', description: 'A journey through space and time', director: 'Christopher Nolan', trailer: 'https://www.youtube.com/embed/zSWdZVtXT7E' },
+            { id: 3, title: 'Dunkirk', description: 'A WWII epic', director: 'Christopher Nolan', trailer: 'https://www.youtube.com/embed/F-eMt3SrfFU' },
         ];
 
         setMovies(fetchMovies());
